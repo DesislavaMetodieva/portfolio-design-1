@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+/* Declaring css variables */ 
+:root {
+  -blue-lagoon: #094af1;
+  -blood-orange: #f56e51;
+  -flaming-breath: #fbebe6;
+  -black: #000000;
+  -rocky-grey: #818592;
+  -white: #ffffff;
+  -dark-lagoon: #1c326a;
+  }
+  
+
 body {
   margin: 0;
   padding: 0;

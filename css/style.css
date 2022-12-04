@@ -5,13 +5,14 @@
 /* Declaring css variables */ 
 
 :root {
-  -blue-lagoon: #094af1;
-  -blood-orange: #f56e51;
-  -flaming-breath: #fbebe6;
-  -black: #000000;
-  -rocky-grey: #818592;
-  -white: #ffffff;
-  -dark-lagoon: #1c326a;
+  --blue-lagoon: #094af1;
+  --blood-orange: #f56e51;
+  --flaming-breath: #fbebe6;
+  --black: #000000;
+  --rocky-grey: #818592;
+  --white: #ffffff;
+  --dark-lagoon: #1c326a;
+  --page-wrapper: 1280px;
   }
   
 
@@ -22,21 +23,140 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
+/* <-- main logo / nav --> */ 
 
-p {
+h1 {
+  font-size: 2.8rem;
   margin: 0;
+  color: var(--flaming-breath);
 }
 
 
+.page-wrapper {
+  max-width: var(--page-wrapper);
+  margin: 0 auto;
+  width: 100%;
+}
 
+.page-wrapper-view {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+header {
+  display: flex;
+  background-color: var(--rocky-grey);
+}
+
+/* 
+header > div {
+  display: flex;
+  flex-direction: row;
+  
+
+} */ 
+
+.logo {
+  justify-content: flex-start;
+  display: flex;
+  white-space: nowrap;
+}
+
+nav > ul > li {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  float: left;
+}
+
+nav > a {
+  padding: 1em;
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+  color: var(--flaming-breath);
+  text-underline-offset: 2px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1rem;
+
+
+  
+
+}
+
+
+
+
+/*  <!-- hero banner --> */
+
+.hero-banner > h2 {
+  font-size: 2.4rem;
+}
+
+.hero-banner {
+  background-image: url(/images/yellow-banner.png);
+  background-repeat: no-repeat;
+  display: flex;
+  height: 26vh;
+  background-size: cover;
+  justify-content: space-between;
+  
+}
+
+.banner {
+  display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.container-banner {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+}
+/*    <!-- about me --> */
+
+.banner-heading {
+  font-size: 2.8em;
+  white-space: nowrap;
+  align-items: end;
+  display: flex;
+}
+
+
+.box-banner {
+  display: flex;
+}
+
+/* section About me */
+
+.page-section {
+  display: flex;
+}
+
+
+.verticalLine {
+  text-align: end;
+  font-size: 2.8em;
+  display: flex;
+  width: 20%;
+}
+
+.aboutMeParagraph {
+  padding-left: 2rem;
+  border-left-style: solid;
+  width: 80%;
+}
+
+/* portfolio container */
+
+.workContainer {
+  border-left-style: solid;
+}
 
 
 /* Media queries */

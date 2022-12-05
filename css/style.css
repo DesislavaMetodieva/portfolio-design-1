@@ -114,7 +114,7 @@ nav > a {
 }
 
 .hero-banner {
-  background-image: url(images/portrait.jpg);
+  background-image: url(../images/portrait.jpg);
   background-repeat: no-repeat;
   display: flex;
   height: 26vh;

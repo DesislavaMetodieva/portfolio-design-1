@@ -107,9 +107,6 @@ nav > a {
   font-size: 1rem;
 }
 
-
-
-
 /*  <!-- hero banner --> */
 
 .hero-banner > h2 {
@@ -117,7 +114,7 @@ nav > a {
 }
 
 .hero-banner {
-  background-image: url(/images/portrait.jpg);
+  background-image: url(images/portrait.jpg);
   background-repeat: no-repeat;
   display: flex;
   height: 26vh;
@@ -165,7 +162,6 @@ nav > a {
   margin-top: 16px;
 }
 
-
 .verticalLine {
   text-align: end;
   font-size: 2.8em;
@@ -187,7 +183,6 @@ nav > a {
   display: flex;
 } 
 
-
 .large {
 display: flex;
 width: 100%;
@@ -204,9 +199,7 @@ margin-bottom: 8px;
 .many {
   display: flex;
   flex-direction: row;
-  
   flex-grow: 1;
-  
   gap: 8px;
 }
 
@@ -243,7 +236,6 @@ margin-bottom: 8px;
   margin-right: 8px;
   display: flex;
   flex-grow: 1;
-
 }
 
 .heading-down {
@@ -272,7 +264,7 @@ a.dark {
 
 /* Media queries */
 
-
+/* Tablet screen sizes */
 
 @media screen and (max-width: 979px) {
   .page-section{flex-direction: column ;
@@ -317,6 +309,8 @@ a.dark {
     justify-content: center;
   }
 }
+
+/* Mobile screen sizes */
 
 @media screen and (max-width: 769px)
 {

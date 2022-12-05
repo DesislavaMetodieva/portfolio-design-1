@@ -75,6 +75,11 @@ nav {
   padding: 8px 0 8px 0;
 }
 
+#navigation {
+  display: flex;
+  justify-content: right;
+}
+
 nav > ul > li {
   display: flex;
   justify-content: flex-end;
@@ -193,16 +198,16 @@ border-width: 5px;
 border-color: var(--flaming-breath);
 background-size: cover;
 height: 30vh;
-
+margin-bottom: 8px;
 }
 
 .many {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  height: 50%;
   
+  flex-grow: 1;
+  
+  gap: 8px;
 }
 
 
@@ -292,10 +297,42 @@ a.dark {
   .verticalLine{
     border-bottom: 2px solid #000;
   }
+
+  .headbox{
+    flex-direction: column;
+  }
+
+  .logo {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  #navigation {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 769px)
 {
   .verticalLine{font-size:1.4rem;
+  }
+
+  .many {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .contact {
+    display: block;
+    padding-left: 0px;
   }
 }

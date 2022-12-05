@@ -2,8 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
 /* Declaring css variables */ 
 
 :root {
@@ -135,7 +133,8 @@ nav > a {
   justify-content: flex-start;
   width: auto;
 }
-/*    <!-- about me --> */
+
+/* hero-banner */
 
 .banner-heading {
   font-size: 2.8em;
@@ -196,6 +195,15 @@ height: 30vh;
 margin-bottom: 8px;
 }
 
+.large:hover {
+  -webkit-filter: brightness(120%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .many {
   display: flex;
   flex-direction: row;
@@ -216,6 +224,15 @@ margin-bottom: 8px;
   border-width: 5px;
   border-color: var(--flaming-breath);
   height: 15vh;
+}
+
+.box:hover {
+  -webkit-filter: brightness(140%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .box:nth-child(n+1) {
